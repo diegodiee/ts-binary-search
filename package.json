@@ -1,0 +1,25 @@
+{
+  "name": "ts-binary-search",
+  "version": "0.0.1",
+  "description": "A TypeScript implementation of binary search algorithm for browsers and Node.js",
+  "author": "Diego Bogni <diego.bogni@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diegodiee/ts-binary-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diegodiee/ts-binary-search/issues"
+  },
+  "homepage": "https://github.com/diegodiee/ts-binary-search#readme",
+  "keywords": [
+    "binary search",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": false
+}
