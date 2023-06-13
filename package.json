@@ -1,6 +1,6 @@
 {
   "name": "ts-binary-search",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A TypeScript implementation of binary search algorithm for browsers and Node.js",
   "author": "Diego Bogni <diego.bogni@gmail.com>",
   "license": "MIT",
