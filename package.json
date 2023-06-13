@@ -14,10 +14,19 @@
   "homepage": "https://github.com/diegodiee/ts-binary-search#readme",
   "keywords": [
     "binary search",
-    "typescript"
+    "typescript",
+    "gt",
+    "gte",
+    "lt",
+    "lte"
   ],
   "type": "module",
-  "main": "index.js",
+  "main": "./lib/index.cjs",
+  "types": "./lib/types/index.d.ts",
+  "exports": {
+    "import": "./lib/index.js",
+    "require": "./lib/index.cjs"
+  },
   "scripts": {
     "build": "rollup --config",
     "test": "jest"
@@ -32,5 +41,9 @@
     "ts-jest": "^29.1.0",
     "tslib": "^2.5.3",
     "typescript": "^5.0.4"
-  }
+  },
+  "files": [
+    "dist/",
+    "lib/"
+  ]
 }
