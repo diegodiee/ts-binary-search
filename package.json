@@ -24,6 +24,7 @@
   "main": "./lib/index.cjs",
   "types": "./lib/types/index.d.ts",
   "exports": {
+    "types": "./lib/types/index.d.ts",
     "import": "./lib/index.js",
     "require": "./lib/index.cjs"
   },
