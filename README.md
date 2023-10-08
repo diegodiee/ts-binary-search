@@ -5,9 +5,10 @@
 A lightweight library that supports exact match, predecessor and successor queries on sorted arrays, based on the binary
 search algorithm.
 
-![npm](https://img.shields.io/npm/v/ts-binary-search)
-![npm bundle size](https://img.shields.io/bundlephobia/min/ts-binary-search)
-![npm](https://img.shields.io/npm/l/ts-binary-search)
+[![npm](https://img.shields.io/npm/v/ts-binary-search)](https://www.npmjs.com/package/ts-binary-search)
+[![install size](https://packagephobia.com/badge?p=ts-binary-search)](https://packagephobia.com/result?p=ts-binary-search)
+[![gzip size](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/ts-binary-search@1/dist/ts-binary-search.min.js)](https://cdn.jsdelivr.net/npm/ts-binary-search@1/dist/ts-binary-search.min.js)
+[![npm](https://img.shields.io/npm/l/ts-binary-search)](https://github.com/diegodiee/ts-binary-search/blob/main/LICENSE)
 
 ## Install
 
