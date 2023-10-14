@@ -16,6 +16,7 @@ export default [
       typescript({
         declaration: true,
         declarationDir: 'lib/types',
+        module: 'NodeNext',
       }),
     ],
   },
@@ -30,6 +31,7 @@ export default [
     plugins: [
       typescript({
         target: 'ES5',
+        module: 'NodeNext',
       }),
     ],
   },
@@ -43,7 +45,9 @@ export default [
       name: 'binarySearch',
     },
     plugins: [
-      typescript(),
+      typescript({
+        module: 'NodeNext',
+      }),
       terser(),
     ],
   },
@@ -59,6 +63,7 @@ export default [
     plugins: [
       typescript({
         target: 'ES5',
+        module: 'NodeNext',
       }),
       terser(),
     ],
