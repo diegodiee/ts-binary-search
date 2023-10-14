@@ -3,7 +3,7 @@ import {parse} from './options.js';
 import type {TOptions} from './types.js';
 
 
-export function lte<T, R>(list: T[], target: R, options?: TOptions<T, R>): number {
+export function compare<T, R>(gt: boolean, strict: boolean, list: T[], target: R, options?: TOptions<T, R>) {
   if (list.length === 0)
     return -1;
 
@@ -18,11 +18,20 @@ export function lte<T, R>(list: T[], target: R, options?: TOptions<T, R>): numbe
     const mid = Math.floor(lo + (hi - lo) / 2);
 
     const x = compareFn(list[mid], target);
-    if (x <= 0) {
-      index = mid;
-      lo = mid + 1;
+    if (gt) {
+      if (x > 0 || (!strict && x === 0)) {
+        index = mid;
+        hi = mid - 1;
+      } else {
+        lo = mid + 1;
+      }
     } else {
-      hi = mid - 1;
+      if (x < 0 || (!strict && x === 0)) {
+        index = mid;
+        lo = mid + 1;
+      } else {
+        hi = mid - 1;
+      }
     }
   }
 
