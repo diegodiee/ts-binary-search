@@ -1,4 +1,4 @@
-import {eq} from '../src';
+import {eq} from '../src/index.js';
 
 
 test('eq', () => {
@@ -186,7 +186,7 @@ test('eq: options.compareFn (number)', () => {
 });
 
 test('eq: options.compareFn (string)', () => {
-  type TItem = { ch: string };
+  type TItem = {ch: string};
   const L: TItem[] = ['a', 'b', 'C', 'D', 'e', 'F', 'g', 'H', 'i'].map(n => ({ch: n}));
 
   const cmp = (item: TItem, target: string) => {
@@ -208,7 +208,7 @@ test('eq: options.compareFn (string)', () => {
 });
 
 test('eq: options.compareFn (object)', () => {
-  type TItem = { value: number }
+  type TItem = {value: number}
   const L: TItem[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => ({value: n}));
 
   const cmpA = (item: TItem, target: TItem): number => {

@@ -1,4 +1,4 @@
-import {lt} from '../src';
+import {lt} from '../src/index.js';
 
 
 test('lt', () => {
@@ -126,7 +126,7 @@ test('lt: options.compareFn (number)', () => {
 });
 
 test('lt: options.compareFn (string)', () => {
-  type TItem = { ch: string };
+  type TItem = {ch: string};
   const L: TItem[] = ['a', 'E', 'i', 'o', 'U'].map(n => ({ch: n}));
 
   const cmp = (item: TItem, target: string) => {
@@ -153,7 +153,7 @@ test('lt: options.compareFn (string)', () => {
 });
 
 test('lt: options.compareFn (object)', () => {
-  type TItem = { value: number }
+  type TItem = {value: number}
   const L: TItem[] = [0, 1, 2, 2, 2, 3, 4, 5, 8, 9, 10, 10, 10, 10, 15].map(n => ({value: n}));
 
   const cmpA = (item: TItem, target: TItem): number => item.value - target.value;

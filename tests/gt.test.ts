@@ -1,4 +1,4 @@
-import {gt} from '../src';
+import {gt} from '../src/index.js';
 
 
 test('gt', () => {
@@ -127,7 +127,7 @@ test('gt: options.compareFn (number)', () => {
 });
 
 test('gt: options.compareFn (string)', () => {
-  type TItem = { ch: string };
+  type TItem = {ch: string};
   const L: TItem[] = ['A', 'e', 'i', 'O', 'U'].map(n => ({ch: n}));
 
   const cmp = (item: TItem, target: string) => {
@@ -153,7 +153,7 @@ test('gt: options.compareFn (string)', () => {
 });
 
 test('gt: options.compareFn (object)', () => {
-  type TItem = { value: number }
+  type TItem = {value: number}
   const L: TItem[] = [0, 2, 2, 3, 3, 4, 5, 8, 9, 10, 10, 10, 10, 15].map(n => ({value: n}));
 
   const cmpA = (item: TItem, target: TItem): number => item.value - target.value;
